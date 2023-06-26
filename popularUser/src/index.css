@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+.nav {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.celebs {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.accordion-wrapper {
+  margin: auto;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.accordion-top {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #313131;
+  cursor: pointer;
+  color: #a09f9f;
+  transition: transform 0.5s;
+}
+
+.accordion-top:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.accordion-top img {
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.accordion-top h3 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-right: 30px;
+}
+
+.accordion-top span {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 17px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accordion-middle-wrapper {
+  background-color: #272626;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: #757575;
+  font-weight: bolder;
+}
+
+.accordion-middle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.user-info {
+  display: grid;
+  grid-gap: 2px;
+}
+
+.dob, .gender, .country {
+  background-color: #000;
+  padding: 5px 5px;
+  border-radius: 5px;
+  color: #aaa5a5;
+  text-align: center;
+}
+
+.user-info select {
+  outline: none;
+  background-color: #000;
+  padding: 5px 5px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+}
+
+.user-info input {
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 5rem;
+}
+
+.textarea-wrapper {
+  margin-top: 10px;
+}
+
+.textarea-wrapper textarea {
+  margin-top: 10px;
+  width: 100%;
+  height: 20vh;
+  background-color: #000;
+  color: #aaa5a5;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 0px;
+  line-height: 20px;
+  font-size: 15px;
+  text-align: center;
+  outline: none;
+}
+
+.textarea-wrapper .textarea {
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 25px;
+  color: #757575;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.icon.edit {
+  margin-right: 20px;
+}
+
+.icon.edit:hover {
+   color: #03e93c;
+   font-weight: bold;
+   transform: scale(1.4);
+}
+
+.icon.delete:hover {
+  color: #dd0202;
+  font-weight: bold;
+  transform: scale(1.4);
+}
+
+.save-button {
+   margin-right: 10px;
+   width: 80px;
+}
+
+.cancel-button:hover {
+  color: red;
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.save-button:disabled{
+  background-color: #000;
+  color: #3f3e3e;
+}
+.save-button:disabled:hover {
+  color: #3f3e3e;
+}
+.save-button:hover {
+  color: #00ee00;
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.save-button, .cancel-button {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 80px;
+  transition: 0.2s;
+}
+
